@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ArrayOfDialogue xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Dialogue>
+    <textdial>
+      <LastSentence>Looping sentence</LastSentence>
+      <Sentences>First sentence</Sentences>
+      <Sentences>Second sentence</Sentences>
+      <Sentences>Last one before looping one</Sentences>
+    </textdial>
+    <ObjectID>0</ObjectID>
+  </Dialogue>
+</ArrayOfDialogue>
