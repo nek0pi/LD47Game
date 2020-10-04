@@ -5,23 +5,26 @@ using UnityEngine;
 
 public class KillManager : MonoBehaviour
 {
-    private GameObject target;
-    private void OnTriggerEnter(Collider other)
+    public GameObject Target;
+    bool isDead = false;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Player")) { target = other.gameObject; }    
+        if (collision.gameObject.CompareTag("Player")) { Target = collision.gameObject; }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Player")) { target = null; }
-
+        if (collision.gameObject.CompareTag("Player")) { Target = null; }
     }
 
     public void Attack()
     {
-        if (target != null)
+        if (Target != null && isDead == false)
         {
             Debug.Log("Player has died");
+            var ic = Target.GetComponent<InputContoller>();
+            ic.currentState = new PlayerNoControlState(ic);
+            isDead = true;
             DeathManager.Die();
         }
     }

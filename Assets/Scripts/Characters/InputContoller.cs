@@ -8,6 +8,7 @@ public class InputContoller : StateMachine
     public MovementController MovementController;
     [HideInInspector]
     public InteractonController InteractonController;
+    [HideInInspector]
     public KillManager KillManager;
 
     private void Awake()
@@ -20,25 +21,25 @@ public class InputContoller : StateMachine
     private void Update()
     {
         Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        OnMove(input);
+        Move(input);
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            OnInteract();
+            Interact();
+            Debug.Log("I'm in my current state, it's " + currentState);
         }
 
     }
 
-    public virtual void OnMove(Vector2 inputVect)
-    {
-        if (currentState != null)
-            StartCoroutine(currentState.Move(inputVect));
-    }
-
-    public virtual void OnInteract()
+    private void Interact()
     {
         if (currentState != null)
             StartCoroutine(currentState.Interact());
     }
 
+    private void Move(Vector2 input)
+    {
+        if (currentState != null)
+            StartCoroutine(currentState.Move(input));
+    }
 }

@@ -6,16 +6,20 @@ public class InteractonController : MonoBehaviour
 {
     private IInteractible _interactible;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        other.TryGetComponent(out _interactible);
+        collision.TryGetComponent(out _interactible);
         //todo make an object be highlighted when you are nearby
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        other.TryGetComponent(out _interactible);
+        if(collision.TryGetComponent(out _interactible) == true)
+        {
+            _interactible = null;
+        }
     }
+
     public void Interact(InputContoller _inputcontoller)
     {
         if(_interactible != null)

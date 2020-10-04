@@ -10,19 +10,21 @@ public class EnemyController : InputContoller
         currentState = new EnemyNormalState(this);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        // Conditions to find and kill the player.
-        // Once every specific frame (not every frame.)
-        // Todo add some conditions
-    }
-    public override void OnMove(Vector2 inputVect)
-    {
-        Debug.Log("I'm looking for you");
+        if (Time.frameCount % 30 == 0)
+        {
+            if (KillManager.Target != null)
+            {
+                Attack();
+            }
+        }
     }
 
-    public override void OnInteract()
+    private void Attack()
     {
-        Debug.Log("I've killed you");
+        if(currentState != null)
+            StartCoroutine(currentState.Attack());
+        Debug.Log("I'm in my current state, it's " + currentState);
     }
 }
