@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db3bae4c9ef83d54693519e8dc469b24, type: 3}
-  m_Name: WoodenStick
+  m_Name: Wrench
   m_EditorClassIdentifier: 
-  id: 7
+  id: 10
   icon: {fileID: 21300000, guid: fb000b61a02b4e6469bad42c3c5a4f7c, type: 3}
   objectName: Bucket
   description: Bucket obj
