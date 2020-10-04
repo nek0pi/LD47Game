@@ -8,6 +8,7 @@ public class InputContoller : StateMachine
     public MovementController MovementController;
     [HideInInspector]
     public InteractonController InteractonController;
+    public KillManager KillManager;
 
     private void Awake()
     {
