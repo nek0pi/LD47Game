@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public abstract class State 
+public abstract class State : MonoBehaviour
 {
     protected readonly InputContoller _inputcontoller;
 

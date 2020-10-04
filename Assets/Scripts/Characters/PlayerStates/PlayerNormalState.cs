@@ -14,6 +14,11 @@ public class PlayerNormalState : State
 
     public override IEnumerator Interact()
     {
+        Item currentItem = Inventory.instance.GetItemFromInventory(Inventory.instance.GetCurrentItemIndex());
+        //if (currentItem.id == )
+       // {
+
+        //}
         _inputcontoller.InteractonController.Interact(_inputcontoller);
         yield break;
     }
