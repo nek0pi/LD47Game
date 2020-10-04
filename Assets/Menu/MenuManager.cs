@@ -10,7 +10,6 @@ public class MenuManager : MonoBehaviour
     [SerializeField]
     private GameObject[] mainMenuViews;
 
-
     public void Start()
     {
         if (instance == null)

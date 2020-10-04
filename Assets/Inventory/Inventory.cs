@@ -117,4 +117,16 @@ public class Inventory : MonoBehaviour
     {
         return itemsList;
     }
+
+    public Item GetItemFromInventory(int index)
+    {
+        return itemsList[index];
+    }
+
+    public int GetCurrentItemIndex()
+    {
+        return currentItem;
+    }
+
+
 }
