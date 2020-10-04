@@ -7,6 +7,18 @@ public class ShowInventory : MonoBehaviour
 {
     [SerializeField]
     private List<ItemSlot> itemSlots;
+    [SerializeField]
+    private Color highlightColor;
+
+    public void UpdateSlot(int currentItem)
+    {
+        Debug.Log(currentItem);
+        foreach (ItemSlot itemSlot in itemSlots)
+        {
+            itemSlot.gameObject.gameObject.GetComponent<Image>().color = Color.white;
+        }
+        itemSlots[currentItem].gameObject.GetComponent<Image>().color = highlightColor;
+    }
 
     public void UpdateInventory()
     {
