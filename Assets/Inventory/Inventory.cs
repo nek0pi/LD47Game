@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Inventory : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Inventory : MonoBehaviour
 
     private delegate void OnItemAdd();
     private event OnItemAdd onItemAdd;
+
+    private delegate void OnCurrentItemChanged(int currentItem);
+    private event OnCurrentItemChanged onCurrentItemChanged;
 
     [SerializeField]
     private List<Item> itemsList;
@@ -36,6 +40,24 @@ public class Inventory : MonoBehaviour
         InitializeInventory();
     }
 
+    public void Update()
+    {
+        // А нет у юнити интерфейсика на event колесикa мышки. Сорри нот сорри гайз, будем работать так.
+        if (Input.mouseScrollDelta.y != 0)
+        {
+            currentItem += (int)Input.mouseScrollDelta.y;
+
+            if (currentItem >= inventoryCapacity)
+                currentItem -= inventoryCapacity;
+
+            if (currentItem < 0)
+                currentItem = inventoryCapacity + currentItem;
+
+            onCurrentItemChanged?.Invoke(currentItem);
+        }
+    
+    }
+
     private void InitializeInventory()
     {
         itemsList = new List<Item>(inventoryCapacity);
@@ -57,6 +79,8 @@ public class Inventory : MonoBehaviour
             itemsMap.Add((int)item.id, item);
         }
         onItemAdd += showInventory.UpdateInventory; //Главное отписаться не забудь 
+        onCurrentItemChanged += showInventory.UpdateSlot;
+        onCurrentItemChanged?.Invoke(currentItem);
     }
 
     public void UseItem(Item itemToUse)
