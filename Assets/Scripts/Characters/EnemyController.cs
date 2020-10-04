@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyController : InputContoller
 {
-    public KillManager KillManager;
     private void Awake()
     {
         KillManager = GetComponent<KillManager>();

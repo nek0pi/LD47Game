@@ -8,7 +8,7 @@ public class EnemyNormalState : State
 
     public override IEnumerator Interact()
     {
-        _inputcontoller.KillManager();
+        _inputcontoller.KillManager.Attack();
         yield break;
     }
 }
