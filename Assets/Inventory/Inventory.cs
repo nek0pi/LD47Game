@@ -24,7 +24,7 @@ public class Inventory : MonoBehaviour
 
     [SerializeField]
     private int inventoryCapacity = 9;
-    private int currentItem = 0;
+    private int currentItem = -1;
 
     public void Start()
     {
@@ -45,15 +45,22 @@ public class Inventory : MonoBehaviour
         // А нет у юнити интерфейсика на event колесикa мышки. Сорри нот сорри гайз, будем работать так.
         if (Input.mouseScrollDelta.y != 0)
         {
-            currentItem += (int)Input.mouseScrollDelta.y;
+            if (itemsList.Count >= 1)
+            {
+                currentItem += (int)Input.mouseScrollDelta.y;
 
-            if (currentItem >= inventoryCapacity)
-                currentItem -= inventoryCapacity;
+                if (currentItem >= itemsList.Count)
+                    currentItem -= itemsList.Count;
 
-            if (currentItem < 0)
-                currentItem = inventoryCapacity + currentItem;
+                if (currentItem < 0)
+                    if (itemsList.Count == 1)       //Лучше пусть будет тут
+                        currentItem = 0;
+                else 
+                    currentItem = itemsList.Count + currentItem;
 
-            onCurrentItemChanged?.Invoke(currentItem);
+                onCurrentItemChanged?.Invoke(currentItem);
+            }
+         
         }
     
     }
@@ -80,7 +87,6 @@ public class Inventory : MonoBehaviour
         }
         onItemAdd += showInventory.UpdateInventory; //Главное отписаться не забудь 
         onCurrentItemChanged += showInventory.UpdateSlot;
-        onCurrentItemChanged?.Invoke(currentItem);
     }
 
     public void UseItem(Item itemToUse)
