@@ -9,7 +9,7 @@ public class PlayerBusyState : State
 
     public override IEnumerator Start()
     {
-        StartCoroutine();
+        //StartCoroutine();
         yield break;
     }
 
