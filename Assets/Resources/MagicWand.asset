@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MagicWand
   m_EditorClassIdentifier: 
   id: 3
-  icon: {fileID: 0}
-  objectName: MagicWand
-  description: MagicWand
+  icon: {fileID: 21300000, guid: fb000b61a02b4e6469bad42c3c5a4f7c, type: 3}
+  objectName: Bucket
+  description: Bucket obj
