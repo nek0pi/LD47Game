@@ -8,13 +8,14 @@ public class InteractonController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.TryGetComponent(out _interactible);
-        //todo make an object be highlighted when you are nearby
+        if(collision.gameObject.CompareTag("Interactable"))
+            collision.TryGetComponent(out _interactible);
+            //todo make an object be highlighted when you are nearby
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.TryGetComponent(out _interactible) == true)
+        if (collision.gameObject.CompareTag("Interactable"))
         {
             _interactible = null;
         }

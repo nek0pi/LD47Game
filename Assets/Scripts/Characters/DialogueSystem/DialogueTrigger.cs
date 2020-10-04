@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    bool isFirstTime = true;
     public void StartDialogue(int id)
     {
         Dialogue.TextDialogue sentences = SentensesLoader.AllDialogues[id];
-        DialogueManager.Instance.StartDialogue(sentences.Sentences, sentences.LastSentence);
+        if (isFirstTime)
+        {
+            DialogueManager.Instance.StartDialogue(sentences.Sentences, sentences.LastSentence);
+            isFirstTime = false;
+        }
+        else
+        {
+            DialogueManager.Instance.DisplayNextSentence();
+        }
     }
 }

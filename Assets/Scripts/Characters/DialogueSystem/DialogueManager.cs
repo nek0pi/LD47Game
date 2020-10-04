@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueManager : MonoBehaviour
+public partial class DialogueManager : MonoBehaviour
 {
     private Queue<string> _sentencesToShow = new Queue<string>();
     private string lastMes;
     public static DialogueManager Instance;
+    public DialogueDisplayer DialogueDisplayer;
 
     private void Start()
     {
@@ -20,6 +21,9 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+
+        if(DialogueDisplayer == null)
+            DialogueDisplayer = GetComponent<DialogueDisplayer>();
     }
 
     public void StartDialogue(string[] dialogueText, string lastmessage)
@@ -38,17 +42,17 @@ public class DialogueManager : MonoBehaviour
     public void DisplayNextSentence()
     {
         if(_sentencesToShow.Count == 0) 
-        { 
-            Debug.Log(lastMes); 
-            EndOfDialogue(); 
+        {  
+            LoopingMessage();
+            return;
         }
 
         //Todo Show some text on a dialogue bar
-        Debug.Log(_sentencesToShow.Dequeue());
+        DialogueDisplayer.DisplayMessage(_sentencesToShow.Dequeue());
     }
 
-    public void EndOfDialogue()
+    public void LoopingMessage()
     {
-        // Todo close a dialogue bar on the bottom part of the screen
+        DialogueDisplayer.DisplayMessage(lastMes);
     }
 }
