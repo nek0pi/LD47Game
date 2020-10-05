@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   icon: {fileID: 21300000, guid: fb000b61a02b4e6469bad42c3c5a4f7c, type: 3}
-  objectName: Torch Unlit
+  objectName: 'Unlit Torch '
   description: It's not on fire...

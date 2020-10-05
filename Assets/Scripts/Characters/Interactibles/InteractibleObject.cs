@@ -16,7 +16,7 @@ public class InteractibleObject : MonoBehaviour, IInteractible
 
         if(ItemInside != null && hasPickedUpItem == false)
         {
-            DialogueManager.Instance.DialogueDisplayer.DisplayMessage($"You've found a {ItemInside.objectName}!");
+            DialogueDisplayer.Instance.DisplayMessage($"You've found a {ItemInside.objectName}!");
             hasPickedUpItem = true;
             Inventory.instance.AddItemToInventory(ItemInside.id);
             return;

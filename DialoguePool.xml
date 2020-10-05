@@ -2,11 +2,191 @@
 <ArrayOfDialogue xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Dialogue>
     <textdial>
-      <LastSentence>Looping sentence</LastSentence>
-      <Sentences>First sentence</Sentences>
-      <Sentences>Second sentence</Sentences>
-      <Sentences>Last one before looping one</Sentences>
+      <LastSentence>I can get some gasoline here</LastSentence>
+      <Sentences>We bought this fuel tank last year</Sentences>
+      <Sentences>Rachel says it makes her feel like she lives at a factory</Sentences>
+      <Sentences>Maybe we can paint some flowers on it</Sentences>
     </textdial>
-    <ObjectID>0</ObjectID>
+    <ObjectID>0</ObjectID> <!--Fuel Tank-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Generator is out of fuel</LastSentence>
+      <Sentences>I need to start this thing, it is getting dark</Sentences>
+    </textdial>
+    <ObjectID>1</ObjectID> <!--Generator (Off)-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>I can fix it in no time, just need to grab my tools</LastSentence>
+      <Sentences>Faucet isn't working. Of course, why would it...</Sentences>
+      <Sentences>Rachel was right, this house is not ready for a vacation</Sentences>
+      <Sentences>Good thing I came early, this place needs some fixing up</Sentences>
+    </textdial>
+    <ObjectID>2</ObjectID> <!--Sink (Water faucet broken)-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>If this day ever ends I am taking a shower</LastSentence>
+      <Sentences>I am such a handyman</Sentences>
+      <Sentences>It is nice to have running water</Sentences>
+    </textdial>
+    <ObjectID>3</ObjectID> <!--Sink (Repaired)-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>I can get water here</LastSentence>
+      <Sentences>This water well is the oldest thing here</Sentences>
+      <Sentences>My parents relied on this for fresh water</Sentences>
+    </textdial>
+    <ObjectID>4</ObjectID> <!--Water Well-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>My car is not going anywhere</LastSentence>
+      <Sentences>My car is not going anywhere, transmission is blown</Sentences>
+      <Sentences>My family will join me on the weekends. We can tow it to service then</Sentences>
+      <Sentences>For now I have to make sure the cabin is in a good state</Sentences>
+    </textdial>
+    <ObjectID>5</ObjectID> <!--Car-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>The ground looks soft here</LastSentence>
+      <Sentences>We used to have a campfire here</Sentences>
+      <Sentences>Nothing grows on this spot anymore</Sentences>
+    </textdial>
+    <ObjectID>6</ObjectID> <!--Soft Ground-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>This is deep enough</LastSentence>
+      <Sentences>I could dig a grave here</Sentences>
+      <Sentences>I do not plan on needing a grave tonight</Sentences>
+    </textdial>
+    <ObjectID>7</ObjectID> <!--Digged out empty pit-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Rachel will be here soon</LastSentence>
+      <Sentences>This wall clock always creeped me out</Sentences>
+      <Sentences>My family will join me here in a few days</Sentences>
+      <Sentences>It is going to be dark soon</Sentences>
+      <Sentences>Time is of the essence</Sentences>
+    </textdial>
+    <ObjectID>8</ObjectID> <!--Wall clock-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>It is just an empty wardrobe</LastSentence>
+      <Sentences>I used to hide in here when I was little</Sentences>
+      <Sentences>I felt safe in there</Sentences>
+      <Sentences>My parents were arguing a lot back then</Sentences>
+      <Sentences>Now it is just a wardrobe</Sentences>
+      <Sentences>Rachel will stuff her clothes here</Sentences>
+    </textdial>
+    <ObjectID>9</ObjectID> <!--Wardrobe-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>The locker is rusty but otherwise it aged well</LastSentence>
+      <Sentences>My parents would always keep this locked</Sentences>
+      <Sentences>I never knew what were they keeping in there</Sentences>
+      <Sentences>I only found out when Dad passed away...</Sentences>
+    </textdial>
+    <ObjectID>10</ObjectID> <!--Locker--> 
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Good place for kitchenware</LastSentence>
+      <Sentences>I made shelves for this closet</Sentences>
+      <Sentences>It is just a few planks with nails, but it looks good</Sentences>
+      <Sentences>This was my project after I fixed up the roof</Sentences>
+      <Sentences>Top shelf is kid-proof, they are not tall enough to reach it</Sentences>
+      <Sentences>I think we have everything we need here now</Sentences>
+    </textdial>
+    <ObjectID>11</ObjectID> <!--Closet-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Nothing I can use in here</LastSentence>
+      <Sentences>Did not have much to do here when I was growing up</Sentences>
+      <Sentences>My parents kept me busy with housework</Sentences>
+      <Sentences>Nowadays some people would call that child labor</Sentences>
+    </textdial>
+    <ObjectID>12</ObjectID> <!--Desk with instruments-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Now I have a different favorite tool</LastSentence>
+      <Sentences>I learned to work with my hands</Sentences>
+      <Sentences>My Dad was speding most days working on a nearby farm</Sentences>
+      <Sentences>He never told me, but I think he was pround of how well I kept this place together</Sentences>
+      <Sentences>My favorite tool was the hammer</Sentences>
+      <Sentences>Father loved saying "You can fix anything with a hammer!"</Sentences>
+      <Sentences>Everything looked like a nail to that man</Sentences>
+    </textdial>
+    <ObjectID>13</ObjectID> <!--Hanging on the wall instruments-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>I am not hungry</LastSentence>
+      <Sentences>Can not leave much in here between trips</Sentences>
+      <Sentences>My favorite part of the kitchen</Sentences>
+    </textdial>
+    <ObjectID>14</ObjectID> <!--Fridge-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Not what I am looking for</LastSentence> 
+      <Sentences>Too much dust on these shelves</Sentences>
+      <Sentences>I think if I stack books here kids will eventually read them</Sentences>
+      <Sentences>Just need to get them very very bored first</Sentences>
+      <Sentences>Where is my "Father of the year award"?</Sentences>
+    </textdial>
+    <ObjectID>15</ObjectID> <!--Shelves-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>If I keep looking here I will just get hungry</LastSentence>
+      <Sentences>I can prepare a meal here later</Sentences>
+      <Sentences>If I was looking for a fork this would be the place</Sentences>
+    </textdial>
+    <ObjectID>16</ObjectID> <!--Cooking table with drawers-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>I have already looked in here</LastSentence>
+      <Sentences>I remember one time my hand slipped and I hit my finger with a hammer</Sentences>
+      <Sentences>Father asked me: "Why do you keep hitting yourself?"</Sentences>
+      <Sentences>"Because it feels so good when I stop"</Sentences>
+    </textdial>
+    <ObjectID>17</ObjectID> <!--Box-->
+  </Dialogue>
+
+  <Dialogue>
+    <textdial>
+      <LastSentence>Not the treasure I need but the one I deserve</LastSentence>
+      <Sentences>Uff, the smell in here</Sentences>
+      <Sentences>This reminds me - we need to bring some garbage cans to this place</Sentences>
+    </textdial>
+    <ObjectID>18</ObjectID> <!--Chest-->
   </Dialogue>
 </ArrayOfDialogue>
