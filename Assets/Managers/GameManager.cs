@@ -7,9 +7,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    int resetIteration = 0;
+
+    public delegate void OnReset(int currentIteration);
+    public event OnReset onReset;
 
     [SerializeField]
-    private int hour; //Время откуда начинается отсчет и просто отвечает за время
+    private int hourStart; //Время откуда начинается отсчет
+    private int hour; //Просто отвечает за время
     private float timer;
     private float inGameHour = 120f; //Понять на 120F. Для теста пока 10
     private bool isAM =true;
@@ -33,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void InitializeClock()
     {
-        clockText.text = hour + (isAM ? " A.M." : " P.M.");
+        clockText.text = hourStart + (isAM ? " A.M." : " P.M.");
     }
 
     public void Update()
@@ -54,5 +59,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ResetTimer()
+    {
+        isAM = true;
+        hour = hourStart;
+        clockText.text = hourStart + (isAM ? " A.M." : " P.M.");
+    }
+
+    public void ResetWord()
+    {
+        resetIteration++;
+        ResetTimer();
+        onReset?.Invoke(resetIteration);
+    }
 
 }

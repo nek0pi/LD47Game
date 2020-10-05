@@ -91,6 +91,7 @@ public class Inventory : MonoBehaviour
         onItemAdd += showInventory.UpdateInventory; //Главное отписаться не забудь 
         onCurrentItemChanged += showInventory.UpdateSlot;
         onItemsClear += showInventory.ClearInventory;
+        GameManager.instance.onReset += OnReset;
     }
 
     public void UseItem(Item itemToUse)
@@ -153,6 +154,11 @@ public class Inventory : MonoBehaviour
         itemsList.Clear();
         currentItem = -1;
         onItemsClear?.Invoke();
+    }
+
+    public void OnReset(int itteration)
+    {
+        ClearAllInventory();
     }
 
 }
