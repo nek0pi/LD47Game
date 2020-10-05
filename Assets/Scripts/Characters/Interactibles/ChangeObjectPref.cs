@@ -10,6 +10,7 @@ public class ChangeObjectPref : MonoBehaviour
     private void Start()
     {
         GetComponent<TimeConsumingTask>().OnInteract += ChangePrefab;
+
     }
     public void ChangePrefab()
     {

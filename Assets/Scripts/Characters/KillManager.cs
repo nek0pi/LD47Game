@@ -23,9 +23,9 @@ public class KillManager : MonoBehaviour
         {
             Debug.Log("Player has died");
             var ic = Target.GetComponent<InputContoller>();
-            ic.currentState = new PlayerNoControlState(ic);
+            ic.SetState(new PlayerNoControlState(ic));
             isDead = true;
-            DeathManager.Die();
+            DeathManager.Instance.Die();
         }
     }
 }

@@ -7,15 +7,18 @@ public class WaterPit : MonoBehaviour
     public GameObject ElectrifiedPit;
     private void Start()
     {
+        GameManager.instance.onReset += OnReset;
+        GameManager.instance.isWaterPuddlePlaced = true;
         ElectrifyIt();
     }
 
     public void ElectrifyIt()
     {
-        if (GameManager.instance.isActiveElectricity == true)
+        if(ElectricPuddleManager.instance.PlaceElectricPuddle() == true)
         {
-            //todo make it turn into a different object
-            Instantiate(ElectrifiedPit, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
+
+    public void OnReset(int n) { Destroy(gameObject); }
 }

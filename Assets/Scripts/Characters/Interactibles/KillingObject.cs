@@ -13,6 +13,6 @@ public class KillingObject : MonoBehaviour
     IEnumerator KillAndAnimation()
     {
         yield return new WaitForSeconds(animationTime);
-        DeathManager.Die();
+        DeathManager.Instance.Die();
     }
 }
