@@ -17,7 +17,6 @@ public class InputContoller : StateMachine
         MovementController = GetComponent<MovementController>();
         InteractonController = GetComponent<InteractonController>();
         currentState = new PlayerNormalState(this);
-
     }
     private void Update()
     {
@@ -42,4 +41,5 @@ public class InputContoller : StateMachine
         if (currentState != null)
             StartCoroutine(currentState.Move(input));
     }
+
 }

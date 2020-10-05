@@ -23,7 +23,7 @@ public class KillManager : MonoBehaviour
         {
             Debug.Log("Player has died");
             var ic = Target.GetComponent<InputContoller>();
-            //todo add dying animation
+            // add dying animation
             ic.GetComponent<MovementController>().CharAnimator.SetBool("isDead", true);
             ic.SetState(new PlayerNoControlState(ic));
             isDead = true;

@@ -79,10 +79,6 @@ public class Inventory : MonoBehaviour
             allItems.Add(item);
         }
 
-        foreach (Item item in allItems)
-        {
-            Debug.LogError(item);
-        }
 
         foreach (var item in allItems)
         {

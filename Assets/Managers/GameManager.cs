@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI clockText;
 
-    public void Start()
+    public void Awake()
     {
         if (instance == null)
         {
@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
                 isPM = !isPM;
                 hour = 0;
                 onTime?.Invoke();
+                ActivateSpider();
             }
 
             clockText.text = hour.ToString() + (isPM ? " P.M." : " A.M.");

@@ -11,6 +11,6 @@ public class SpiderKillable : MonoBehaviour
 
     public void WeJustWon()
     {
-        // todo 
+        GameManager.instance.FinishGame();
     }
 }

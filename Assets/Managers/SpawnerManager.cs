@@ -6,9 +6,11 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     public static SpawnerManager instance;
-
+    public float waitTime = 1.5f;
     [SerializeField]
     private List<ItemTransform> allItemsOnMapToReset;
+    [SerializeField]
+    private ItemTransform playerItem;
 
     public void Start()
     {
@@ -34,8 +36,17 @@ public class SpawnerManager : MonoBehaviour
         {
             Instantiate(item.item, item.whereToPlace.position, item.whereToPlace.localRotation);
         }
-    }
+        Ressurect();
 
+    }
+    private void Ressurect()
+    {
+        var ic = playerItem.item.GetComponent<InputContoller>();
+        ic.SetState(new PlayerNormalState(ic));
+        ic.GetComponent<MovementController>().CharAnimator.SetBool("isDead", false);
+        ic.transform.position = playerItem.whereToPlace.position;
+
+    }
     [System.Serializable]
     public class ItemTransform
     {
