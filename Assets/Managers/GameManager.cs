@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
                 isAM = !isAM;
                 hour = 0;
                 onTime?.Invoke();
+                StartCoroutine(LightManager.instance.DayToNight());
             }
 
             clockText.text = hour.ToString() + (isAM ? " A.M." : " P.M.");
