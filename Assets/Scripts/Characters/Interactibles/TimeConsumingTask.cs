@@ -21,6 +21,11 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
     {
         dialogueTrigger = GetComponent<DialogueTrigger>();
     }
+
+    private void Start()
+    {
+        GameManager.instance.onReset += OnReset;
+    }
     public void Interact(InputContoller inputController)
     {
         // If there is more than 1 item in inventory
@@ -94,4 +99,6 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
             Inventory.instance.AddItemToInventory(ItemInside.id);
         }
     }
+
+    public void OnReset(int n) { Destroy(gameObject); }
 }

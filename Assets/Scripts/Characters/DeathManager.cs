@@ -1,10 +1,18 @@
 ﻿using UnityEngine;
-public static class DeathManager
+public class DeathManager : MonoBehaviour
 {
-    public static void Die() { }
-    public static void WorldReset() 
+    public static DeathManager Instance;
+    public void Start()
     {
-        //Todo reset the player's state to normal
-        //Todo reset the enemy's position
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance == this)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
     }
+    public void Die() { GameManager.instance.ResetWord(); }
 }

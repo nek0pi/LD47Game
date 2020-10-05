@@ -25,6 +25,5 @@ public class EnemyController : InputContoller
     {
         if(currentState != null)
             StartCoroutine(currentState.Attack());
-        Debug.Log("I'm in my current state, it's " + currentState);
     }
 }

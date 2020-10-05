@@ -142,7 +142,7 @@ MonoBehaviour:
   ItemInside: {fileID: 0}
   timeConsumes: 2
   ItemForInteraction: {fileID: 11400000, guid: 573e7e6097fa92946a6a18ef2b0dbe8e, type: 2}
-  AssociatedSound: {fileID: 0}
+  AssociatedSound: {fileID: 8300000, guid: c475334cbb2dfbe49b7e6b2585fc6a98, type: 3}
 --- !u!114 &5557382115641705729
 MonoBehaviour:
   m_ObjectHideFlags: 0

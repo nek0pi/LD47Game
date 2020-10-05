@@ -237,7 +237,7 @@ MonoBehaviour:
   ItemInside: {fileID: 0}
   timeConsumes: 3
   ItemForInteraction: {fileID: 11400000, guid: 000abf9be3cea384f8275035c84e6452, type: 2}
-  AssociatedSound: {fileID: 0}
+  AssociatedSound: {fileID: 8300000, guid: 8fda3be3fb755d547a2963bee5b67bf2, type: 3}
 --- !u!114 &1823655380723144580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,4 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PointLightsOnMap: {fileID: 0}
+  PuddlesPosition: {fileID: 6723120103970703584, guid: fba6ca81ee6953c438f7008a34112683,
+    type: 3}
+  ElectricPuddle: {fileID: 0}
   isActivated: 0
