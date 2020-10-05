@@ -55,17 +55,17 @@ public class GameManager : MonoBehaviour
         if(isPM)
         timer += Time.deltaTime;
 
+        if (hour == 2)
+        {
+            StartCoroutine(LightManager.instance.DayToNoon());
+        }
+
         if (timer >= inGameHour)    //Очень извиняюсь, но времени уже нет. 
         {
             timer = 0;
             hour++;
 
-            if (hour == 3)
-            {
-                StartCoroutine(LightManager.instance.DayToNoon());
-            }
-
-            else if (hour == 8)
+            if (hour == 8)
             {
                 StartCoroutine(LightManager.instance.DayToNight());
             }
