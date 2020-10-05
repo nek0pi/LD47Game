@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
             timer = 0;
             hour++;
 
-            if (hour == 8)
+            if (hour == 6)
             {
                 StartCoroutine(LightManager.instance.DayToNight());
             }
@@ -90,7 +90,6 @@ public class GameManager : MonoBehaviour
 
     public void ResetWord()
     {
-        StartCoroutine(gameOver.PlayGameOver());
         resetIteration++;
         ResetTimer();
         onReset?.Invoke(resetIteration);
@@ -99,5 +98,10 @@ public class GameManager : MonoBehaviour
     public void ActivateSpider()
     {
         spider.SetActive(true);
+    }
+
+    public void FinishGame()
+    {
+        StartCoroutine(gameOver.PlayGameOver());
     }
 }

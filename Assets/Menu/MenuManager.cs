@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -29,6 +30,15 @@ public class MenuManager : MonoBehaviour
         
         mainMenuViews[(int)menuState].SetActive(true);
     }
+    public void LoadMainLevel()
+    {
+        SceneManager.LoadScene("Assets/Scenes/VladScene.unity", LoadSceneMode.Single);
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
     public void ChangeState(int state)
     {
         menuState = (MenuState)state;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -15,6 +16,18 @@ public class GameOver : MonoBehaviour
         blackScreen.SetActive(true);
         yield return new WaitForSeconds(2f);
         creditsText.SetActive(true);
+        yield return new WaitForSeconds(41f);
+        StartCoroutine(LoadSceneAsync());
+        
+    }
 
+    IEnumerator LoadSceneAsync()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Assets/Scenes/MainMenu.unity");
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
