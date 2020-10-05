@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElectrifiedWaterPit : MonoBehaviour
+public class WaterPit : MonoBehaviour
 {
-    public bool isActiveElectricity;
     public GameObject ElectrifiedPit;
     private void Start()
     {
@@ -13,7 +12,7 @@ public class ElectrifiedWaterPit : MonoBehaviour
 
     public void ElectrifyIt()
     {
-        if (isActiveElectricity)
+        if (GameManager.instance.isActiveElectricity == true)
         {
             //todo make it turn into a different object
             Instantiate(ElectrifiedPit, transform.position, Quaternion.identity);
