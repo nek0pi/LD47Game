@@ -12,11 +12,10 @@ public class ShowInventory : MonoBehaviour
 
     public void UpdateSlot(int currentItem)
     {
-        Debug.Log(currentItem);
-        foreach (ItemSlot itemSlot in itemSlots)
-        {
+       foreach (ItemSlot itemSlot in itemSlots)
+       {
             itemSlot.gameObject.gameObject.GetComponent<Image>().color = Color.white;
-        }
+       }
         itemSlots[currentItem].gameObject.GetComponent<Image>().color = highlightColor;
     }
 
@@ -30,5 +29,20 @@ public class ShowInventory : MonoBehaviour
             //Спасибо юнити за то, что не перегрузили ОДИН МЕТОД, чтобы все коммУнити придумывало велосипед. От души. Завтра надо нормально оформить!
 
         }
+    }
+
+    public void ClearInventory()
+    {
+        foreach (ItemSlot itemSlot in itemSlots)
+        {
+            itemSlot.gameObject.gameObject.GetComponent<Image>().color = Color.white;
+        }
+
+        for (int index = 0; index < itemSlots.Count; index++)
+        {
+            itemSlots[index].GetComponentsInChildren<Image>()[1].sprite = null;
+            //Спасибо юнити за то, что не перегрузили ОДИН МЕТОД, чтобы все коммУнити придумывало велосипед. От души. Завтра надо нормально оформить!
+        }
+
     }
 }
