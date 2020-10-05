@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3967279232812506300}
   - component: {fileID: 3967279232812506299}
   - component: {fileID: 3967279232812506298}
+  - component: {fileID: 1203626505636109697}
   m_Layer: 15
   m_Name: GeneratorOn
-  m_TagString: Interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4a9a00f5894e20e4bb170056a267ef9f, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,3 +109,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &1203626505636109697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967279232812506295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528aa9e4d33c99340bd9284f47af9617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointLightsOnMap: {fileID: 0}
+  isActivated: 1

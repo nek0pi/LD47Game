@@ -4,30 +4,25 @@ using UnityEngine;
 
 public class ElecticalSwitch : MonoBehaviour
 {
-    public GameObject[] PointLightsOnMap;
-    private bool isActivated = false;
+    public GameObject PointLightsOnMap;
+    public bool isActivated = false;
 
 
     private void Start()
     {
-        GetComponent<TimeConsumingTask>().OnInteract += ActivateTheLights;
+        if(isActivated == false)
+            GetComponent<TimeConsumingTask>().OnInteract += ActivateTheLights;
     }
     public void ActivateTheLights()
     {
-        foreach (var item in PointLightsOnMap)
-        {
-            item.SetActive(true);
-        }
-        isActivated = true;
+        PointLightsOnMap.SetActive(true);
     }
 
     public void MakeElecticPaddle()
     {
         if (isActivated)
         {
-            //todo check if there is *Some water puddle object* and if there is make the area eletcric
-            // Subscribe to some event of the manager somewhere to enable this thing!
-
+            //todo make it so that the mud puddle with water is substituded with the puddle that is under load!
         }
     }
 }
