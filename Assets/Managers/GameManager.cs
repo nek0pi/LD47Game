@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public delegate void OnReset(int currentIteration);
     public event OnReset onReset;
 
+    public event Action onTime;
+
     public bool isActiveElectricity;
     public bool isWaterPuddlePlaced = false;
 
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour
             {
                 isAM = !isAM;
                 hour = 0;
+                onTime?.Invoke();
             }
 
             clockText.text = hour.ToString() + (isAM ? " A.M." : " P.M.");
