@@ -140,6 +140,14 @@ public class Inventory : MonoBehaviour
         return currentItem;
     }
 
+    public void RemoveItem(int index)
+    {
+        itemsList.RemoveAt(index);
+        currentItem = -1;
+        onItemsClear?.Invoke();
+        onItemAdd?.Invoke();
+    }
+
     public void ClearAllInventory()
     {
         itemsList.Clear();
