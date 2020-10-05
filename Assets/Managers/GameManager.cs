@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public delegate void OnReset(int currentIteration);
     public event OnReset onReset;
+    public bool isActiveElectricity;
 
     [SerializeField]
     private int hourStart; //Время откуда начинается отсчет
@@ -32,7 +33,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
         InitializeClock();
     }
 
