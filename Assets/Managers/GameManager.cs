@@ -11,7 +11,11 @@ public class GameManager : MonoBehaviour
 
     public delegate void OnReset(int currentIteration);
     public event OnReset onReset;
+
+    public event Action onTime;
+
     public bool isActiveElectricity;
+    public bool isWaterPuddlePlaced = false;
 
     [SerializeField]
     private int hourStart; //Время откуда начинается отсчет
@@ -43,16 +47,19 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+        if(isAM)
         timer += Time.deltaTime;
-        Debug.Log(timer);
+
         if (timer >= inGameHour)    //Очень извиняюсь, но времени уже нет. 
         {
             timer = 0;
             hour++;
+
             if (hour > 12)
             {
                 isAM = !isAM;
                 hour = 0;
+                onTime?.Invoke();
             }
 
             clockText.text = hour.ToString() + (isAM ? " A.M." : " P.M.");
