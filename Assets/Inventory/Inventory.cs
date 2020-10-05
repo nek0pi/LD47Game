@@ -14,6 +14,9 @@ public class Inventory : MonoBehaviour
     private delegate void OnCurrentItemChanged(int currentItem);
     private event OnCurrentItemChanged onCurrentItemChanged;
 
+    private delegate void OnItemsClear();
+    private event OnItemsClear onItemsClear;
+
     [SerializeField]
     private List<Item> itemsList;
     [SerializeField]
@@ -87,6 +90,7 @@ public class Inventory : MonoBehaviour
         }
         onItemAdd += showInventory.UpdateInventory; //Главное отписаться не забудь 
         onCurrentItemChanged += showInventory.UpdateSlot;
+        onItemsClear += showInventory.ClearInventory;
     }
 
     public void UseItem(Item itemToUse)
@@ -134,5 +138,11 @@ public class Inventory : MonoBehaviour
         return currentItem;
     }
 
+    public void ClearAllInventory()
+    {
+        itemsList.Clear();
+        currentItem = -1;
+        onItemsClear?.Invoke();
+    }
 
 }

@@ -37,5 +37,5 @@ public class MenuManager : MonoBehaviour
 
 public enum MenuState : int
 { 
-    MainMenu = 0, SettingsMenu, AboutMenu 
+    MainMenu = 0, SettingsMenu, AboutMenu, ControlsMenu
 }
