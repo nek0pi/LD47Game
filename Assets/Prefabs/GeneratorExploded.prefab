@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3967279232812506300}
   - component: {fileID: 3967279232812506299}
-  - component: {fileID: 8522379900390683099}
   - component: {fileID: 3967279232812506298}
-  - component: {fileID: -1487968807186300645}
+  - component: {fileID: -6804031008075433868}
+  - component: {fileID: 8745837091136913861}
   m_Layer: 15
-  m_Name: GeneratorOn
+  m_Name: GeneratorExploded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,18 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8522379900390683099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3967279232812506295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af4a9c58770236408c50171d82f730e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &3967279232812506298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!82 &-1487968807186300645
+--- !u!82 &-6804031008075433868
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,11 +120,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d131d8c4dfe1bf04c8980fd7ad3e3f82, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2f2d008b19531e94fa7dc9abafc7693d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -218,3 +206,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8745837091136913861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967279232812506295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1413c4d916ee943bfb0c6c14e9a60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectID: 0
+  ItemInside: {fileID: 11400000, guid: 39b65de30d6783049abdb136c9f45755, type: 2}
+  timeConsumes: 0
+  ItemForInteraction: {fileID: 11400000, guid: 86e08139fb7f11943ab2d50dfede9b5f, type: 2}
+  AssociatedSound: {fileID: 8300000, guid: a02c400418336e34fbbe08b182f03800, type: 3}

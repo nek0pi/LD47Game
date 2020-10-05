@@ -1,0 +1,1616 @@
+fileFormatVersion: 2
+guid: aa55e4af7ce7e2349bf82bad80e9399b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3211302652215568398
+    second: guy_idle_0
+  - first:
+      213: 6634275941049686279
+    second: guy_idle_1
+  - first:
+      213: -412874183457189432
+    second: guy_idle_2
+  - first:
+      213: 3335793040986625845
+    second: guy_idle_3
+  - first:
+      213: -3129335340246995434
+    second: guy_idle_4
+  - first:
+      213: -2516384344640354870
+    second: guy_idle_5
+  - first:
+      213: -8656989419122073810
+    second: guy_idle_6
+  - first:
+      213: 4989141456606537108
+    second: guy_idle_7
+  - first:
+      213: 3967439784856491125
+    second: guy_idle_8
+  - first:
+      213: 4743341450197067780
+    second: guy_idle_9
+  - first:
+      213: 7960770398667988233
+    second: guy_idle_10
+  - first:
+      213: 4897819383133074655
+    second: guy_idle_11
+  - first:
+      213: 7521379439641426000
+    second: guy_idle_12
+  - first:
+      213: -1115490636351010558
+    second: guy_idle_13
+  - first:
+      213: -2774048498208248050
+    second: guy_idle_14
+  - first:
+      213: 2060064892780365423
+    second: guy_idle_15
+  - first:
+      213: -7084260651146213383
+    second: guy_idle_16
+  - first:
+      213: 3166639845999959059
+    second: guy_idle_17
+  - first:
+      213: -2593704027620920562
+    second: guy_idle_18
+  - first:
+      213: 3309817082973805195
+    second: guy_idle_19
+  - first:
+      213: -3604474103205002505
+    second: guy_idle_20
+  - first:
+      213: -5819759171960835059
+    second: guy_idle_21
+  - first:
+      213: 2388202316101695162
+    second: guy_idle_22
+  - first:
+      213: -7348515933008109986
+    second: guy_idle_23
+  - first:
+      213: 6684469713164740411
+    second: guy_idle_24
+  - first:
+      213: -9013506046630576952
+    second: guy_idle_25
+  - first:
+      213: 2210192396440447528
+    second: guy_idle_26
+  - first:
+      213: -404048205972437670
+    second: guy_idle_27
+  - first:
+      213: -8603499653127356635
+    second: guy_idle_28
+  - first:
+      213: 7227095864761877946
+    second: guy_idle_29
+  - first:
+      213: 3275286801924353200
+    second: guy_idle_30
+  - first:
+      213: 5071799928388163766
+    second: guy_idle_31
+  - first:
+      213: -3672254373247591187
+    second: guy_idle_32
+  - first:
+      213: -4109474498367980865
+    second: guy_idle_33
+  - first:
+      213: -3291423101568287709
+    second: guy_idle_34
+  - first:
+      213: -7954213649076477310
+    second: guy_idle_35
+  - first:
+      213: -5367628595226279372
+    second: guy_idle_36
+  - first:
+      213: -8706349937936873557
+    second: guy_idle_37
+  - first:
+      213: 2089920169422979383
+    second: guy_idle_38
+  - first:
+      213: 8180534562292256682
+    second: guy_idle_39
+  - first:
+      213: -5783181515700123890
+    second: guy_idle_40
+  - first:
+      213: -7746097809573755659
+    second: guy_idle_41
+  - first:
+      213: 5050461988265968370
+    second: guy_idle_42
+  - first:
+      213: 326905506801707319
+    second: guy_idle_43
+  - first:
+      213: 4984016471450463122
+    second: guy_idle_44
+  - first:
+      213: -3307090833449831051
+    second: guy_idle_45
+  - first:
+      213: 6537568841975036346
+    second: guy_idle_46
+  - first:
+      213: 1733751231653819063
+    second: guy_idle_47
+  - first:
+      213: -3416286511695120188
+    second: guy_idle_48
+  - first:
+      213: -5278822384405464222
+    second: guy_idle_49
+  - first:
+      213: -8013406991474726956
+    second: guy_idle_50
+  - first:
+      213: -4717630535859792115
+    second: guy_idle_51
+  - first:
+      213: -1360680979439975179
+    second: guy_idle_52
+  - first:
+      213: -1994732688655651832
+    second: guy_idle_53
+  - first:
+      213: -8295431846643783979
+    second: guy_idle_54
+  - first:
+      213: -5819625478214623341
+    second: guy_idle_55
+  - first:
+      213: 3780033116083841084
+    second: guy_idle_56
+  - first:
+      213: 4576247180800942750
+    second: guy_idle_57
+  - first:
+      213: -8339791546640028488
+    second: guy_idle_58
+  - first:
+      213: 7201381330194956452
+    second: guy_idle_59
+  - first:
+      213: 302236416258761647
+    second: guy_idle_60
+  - first:
+      213: 1561105448271371971
+    second: guy_idle_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guy_idle_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1785
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08249b7fb6d09c20800000000000000
+      internalID: 3211302652215568398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1785
+        width: 191
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709df2881dea11c50800000000000000
+      internalID: 6634275941049686279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_2
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1785
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1da1e1e1d254af0800000000000000
+      internalID: -412874183457189432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_3
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1785
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5375a34d81e1b4e20800000000000000
+      internalID: 3335793040986625845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1785
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e6085861e5294d0800000000000000
+      internalID: -3129335340246995434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_5
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 1785
+        width: 190
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac58b5b55c1041dd0800000000000000
+      internalID: -2516384344640354870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1785
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fd9e07df13cd780800000000000000
+      internalID: -8656989419122073810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_7
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 1785
+        width: 191
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495253f98bdfc3540800000000000000
+      internalID: 4989141456606537108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_8
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1785
+        width: 188
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5749f14c67d2f0730800000000000000
+      internalID: 3967439784856491125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_9
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 1785
+        width: 190
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408e16beaebb3d140800000000000000
+      internalID: 4743341450197067780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_10
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 1785
+        width: 190
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ddc07ef765a7e60800000000000000
+      internalID: 7960770398667988233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1434
+        width: 189
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd47ba977cc88f340800000000000000
+      internalID: 4897819383133074655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1434
+        width: 189
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058f0c810ce416860800000000000000
+      internalID: 7521379439641426000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_13
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1434
+        width: 189
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20906062d2bf480f0800000000000000
+      internalID: -1115490636351010558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_14
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1434
+        width: 188
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f6792a6999089d0800000000000000
+      internalID: -2774048498208248050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_15
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1434
+        width: 189
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f664d64fa12d69c10800000000000000
+      internalID: 2060064892780365423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_16
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 1434
+        width: 189
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f70728c876afad90800000000000000
+      internalID: -7084260651146213383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_17
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1434
+        width: 189
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cdc60992a22fb20800000000000000
+      internalID: 3166639845999959059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_18
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1434
+        width: 189
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03b72dcdef410cd0800000000000000
+      internalID: -2593704027620920562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_19
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1434
+        width: 188
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a5c2ec915deed20800000000000000
+      internalID: 3309817082973805195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_20
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 1434
+        width: 189
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f20f5486e55afdc0800000000000000
+      internalID: -3604474103205002505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_21
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 1434
+        width: 187
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04f3f41edf0c3fa0800000000000000
+      internalID: -5819759171960835059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_22
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1084
+        width: 188
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6b10f6a59942120800000000000000
+      internalID: 2388202316101695162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_23
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1084
+        width: 187
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ed0ca61b3d40a90800000000000000
+      internalID: -7348515933008109986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1084
+        width: 188
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37aa0dc9c104cc50800000000000000
+      internalID: 6684469713164740411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_25
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1084
+        width: 188
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccbfb5910899e280800000000000000
+      internalID: -9013506046630576952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_26
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1084
+        width: 187
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a2a13464e2cae10800000000000000
+      internalID: 2210192396440447528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_27
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 1084
+        width: 189
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5501e22c48846af0800000000000000
+      internalID: -404048205972437670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_28
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1084
+        width: 187
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fb52616aa3a9880800000000000000
+      internalID: -8603499653127356635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_29
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1084
+        width: 187
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab583d0f56dcb4460800000000000000
+      internalID: 7227095864761877946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_30
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1084
+        width: 188
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bce93e3ef7247d20800000000000000
+      internalID: 3275286801924353200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_31
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 1084
+        width: 187
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b89d6fc927a26640800000000000000
+      internalID: 5071799928388163766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_32
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 1084
+        width: 187
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decd3bd9a18890dc0800000000000000
+      internalID: -3672254373247591187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_33
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 733
+        width: 187
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbaff3777b638f6c0800000000000000
+      internalID: -4109474498367980865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_34
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 733
+        width: 187
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cf189b0248252d0800000000000000
+      internalID: -3291423101568287709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_35
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 733
+        width: 188
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282ab3354d4fc9190800000000000000
+      internalID: -7954213649076477310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_36
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 733
+        width: 188
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4320f474b3a5285b0800000000000000
+      internalID: -5367628595226279372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_37
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 733
+        width: 187
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba747031cd4dc2780800000000000000
+      internalID: -8706349937936873557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_38
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 733
+        width: 189
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731816b3253e00d10800000000000000
+      internalID: 2089920169422979383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_39
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 733
+        width: 187
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf4c3297d8178170800000000000000
+      internalID: 8180534562292256682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_40
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 733
+        width: 187
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07c6155d030ebfa0800000000000000
+      internalID: -5783181515700123890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_41
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 733
+        width: 188
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4cce03515508490800000000000000
+      internalID: -7746097809573755659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_42
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 733
+        width: 188
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2c43a7b68d61640800000000000000
+      internalID: 5050461988265968370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_43
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 733
+        width: 187
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739e80093d6698400800000000000000
+      internalID: 326905506801707319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_44
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 384
+        width: 188
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b20870398ca2540800000000000000
+      internalID: 4984016471450463122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_45
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 384
+        width: 189
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575b540a86ada12d0800000000000000
+      internalID: -3307090833449831051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_46
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 384
+        width: 189
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab97598693c1aba50800000000000000
+      internalID: 6537568841975036346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_47
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 384
+        width: 188
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b23f933f858f0810800000000000000
+      internalID: 1733751231653819063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_48
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 384
+        width: 189
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c834739489e690d0800000000000000
+      internalID: -3416286511695120188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_49
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 384
+        width: 190
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bb121820bddb6b0800000000000000
+      internalID: -5278822384405464222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_50
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 384
+        width: 189
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d764805cc8aac090800000000000000
+      internalID: -8013406991474726956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_51
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 384
+        width: 190
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d079a80d50c978eb0800000000000000
+      internalID: -4717630535859792115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_52
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 384
+        width: 188
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f489dfbbd3ed1de0800000000000000
+      internalID: -1360680979439975179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_53
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 384
+        width: 190
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ce1de20394154e0800000000000000
+      internalID: -1994732688655651832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_54
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 384
+        width: 190
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6a552cfa4b0ec80800000000000000
+      internalID: -8295431846643783979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_55
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 34
+        width: 188
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f543516798c3fa0800000000000000
+      internalID: -5819625478214623341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_56
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 34
+        width: 190
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38e3637710657430800000000000000
+      internalID: 3780033116083841084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_57
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 34
+        width: 189
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92e500a098128f30800000000000000
+      internalID: 4576247180800942750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_58
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 34
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc27b146cb134c80800000000000000
+      internalID: -8339791546640028488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_59
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 34
+        width: 189
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0866e4a2270f360800000000000000
+      internalID: 7201381330194956452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_60
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 34
+        width: 191
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa36a455b62c13400800000000000000
+      internalID: 302236416258761647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guy_idle_61
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 34
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce542552292aa510800000000000000
+      internalID: 1561105448271371971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

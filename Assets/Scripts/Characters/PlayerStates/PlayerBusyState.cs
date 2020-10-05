@@ -18,4 +18,9 @@ public class PlayerBusyState : State
         yield return new WaitForSeconds(_busyTime);
         _inputcontoller.SetState(new PlayerNormalState(_inputcontoller));
     }
+    public override IEnumerator Move(Vector2 input)
+    {
+        _inputcontoller.MovementController.Move(new Vector2(0, 0));
+        yield break;
+    }
 }

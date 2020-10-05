@@ -25,7 +25,7 @@ public class ElectricPuddleManager : MonoBehaviour
     {
         if (GameManager.instance.isActiveElectricity == true && GameManager.instance.isWaterPuddlePlaced == true)
         {
-            //todo make it turn into an electrified pit
+            // make it turn into an electrified pit
             Instantiate(ElectrifiedPitPref, placeforPit.position, Quaternion.identity);
             return true;
         }

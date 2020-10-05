@@ -11,13 +11,11 @@ public class InputContoller : StateMachine
     [HideInInspector]
     public KillManager KillManager;
     [HideInInspector]
-    public BearTrapSpawner BearTrapSpawner;
 
     private void Awake()
     {
         MovementController = GetComponent<MovementController>();
         InteractonController = GetComponent<InteractonController>();
-        BearTrapSpawner = GetComponent<BearTrapSpawner>();
         currentState = new PlayerNormalState(this);
 
     }

@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using DG.Tweening;
 public class DeathManager : MonoBehaviour
 {
     public static DeathManager Instance;
+    public AudioClip AudioClip;
     public void Start()
     {
         if (Instance == null)
@@ -12,7 +14,13 @@ public class DeathManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);      
+        
     }
-    public void Die() { GameManager.instance.ResetWord(); }
+    public void Die() 
+    {
+        GetComponent<AudioSource>().clip = AudioClip;
+        GetComponent<AudioSource>().Play();
+        GameManager.instance.ResetWord(); 
+    }
 }

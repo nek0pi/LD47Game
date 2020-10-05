@@ -62,8 +62,8 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
 
     private void StartWorking(InputContoller inputController)
     {
-        // todo Remove Used Item from inventory
-        
+        //  Remove Used Item from inventory
+        Inventory.instance.RemoveItem(Inventory.instance.GetCurrentItemIndex());
 
         //Loading bar appears and make it be filled with time
         LoadingBar.Instance.UISlider.gameObject.SetActive(true);
@@ -72,15 +72,16 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
         //Transition player to a busy state
         inputController.SetState(new PlayerBusyState(inputController, timeConsumes));
 
-        //Start a timer at the end of which invoke a delegate and potentially give an item to a player
-        StartCoroutine(AfterTaskEvents());
-
-        //todo Start the sound of bucket filling
+        //Start the sound 
         if (AssociatedSound != null)
         {
             GetComponent<AudioSource>().clip = AssociatedSound;
             GetComponent<AudioSource>().Play();
         }
+
+        //Start a timer at the end of which invoke a delegate and potentially give an item to a player
+        StartCoroutine(AfterTaskEvents());
+
             
 
     }
