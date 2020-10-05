@@ -10,11 +10,14 @@ public class InputContoller : StateMachine
     public InteractonController InteractonController;
     [HideInInspector]
     public KillManager KillManager;
+    [HideInInspector]
+    public BearTrapSpawner BearTrapSpawner;
 
     private void Awake()
     {
         MovementController = GetComponent<MovementController>();
         InteractonController = GetComponent<InteractonController>();
+        BearTrapSpawner = GetComponent<BearTrapSpawner>();
         currentState = new PlayerNormalState(this);
 
     }
@@ -26,7 +29,6 @@ public class InputContoller : StateMachine
         if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
-            Debug.Log("I'm in my current state, it's " + currentState);
         }
 
     }

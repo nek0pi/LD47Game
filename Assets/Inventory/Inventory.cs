@@ -130,7 +130,9 @@ public class Inventory : MonoBehaviour
 
     public Item GetItemFromInventory(int index)
     {
-        return itemsList[index];
+        if(itemsList[index] != null)
+            return itemsList[index];
+        return null;
     }
 
     public int GetCurrentItemIndex()
