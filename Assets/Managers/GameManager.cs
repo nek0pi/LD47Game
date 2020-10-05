@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     public bool isActiveElectricity;
     public bool isWaterPuddlePlaced = false;
+    public GameObject spider;
 
     public GameOver gameOver;
 
@@ -95,4 +96,8 @@ public class GameManager : MonoBehaviour
         onReset?.Invoke(resetIteration);
     }
 
+    public void ActivateSpider()
+    {
+        spider.SetActive(true);
+    }
 }
