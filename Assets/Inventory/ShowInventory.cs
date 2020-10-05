@@ -26,7 +26,7 @@ public class ShowInventory : MonoBehaviour
         for (int index = 0; index < items.Count; index++)
         {
             Debug.Log(itemSlots[index].gameObject.name + " name " + itemSlots[index].GetComponentsInChildren<Image>()[1].gameObject.name + " another name");
-            itemSlots[index].GetComponentsInChildren<Image>()[1].sprite = items[index].icon;    
+            itemSlots[index].GetComponentsInChildren<Image>()[1].sprite = items[index].icon;
             //Спасибо юнити за то, что не перегрузили ОДИН МЕТОД, чтобы все коммУнити придумывало велосипед. От души. Завтра надо нормально оформить!
 
         }
