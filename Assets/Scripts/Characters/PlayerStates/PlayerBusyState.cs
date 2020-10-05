@@ -9,8 +9,13 @@ public class PlayerBusyState : State
 
     public override IEnumerator Start()
     {
-        //StartCoroutine();
+        _inputcontoller.StartCoroutine(GetBackToNormalState());
         yield break;
     }
 
+    private IEnumerator GetBackToNormalState()  
+    {
+        yield return new WaitForSeconds(_busyTime);
+        _inputcontoller.SetState(new PlayerNormalState(_inputcontoller));
+    }
 }

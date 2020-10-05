@@ -20,5 +20,5 @@ public class Item : ScriptableObject
 public enum Items : int
 { 
     Bucket = 0, BucketWithWater, TorchUnlit, TorchLit, Shovel, FuelCanEmpty, 
-    FuelCanFilled, WoodenStick, Rag, BearTrap, Wrench
+    FuelCanFilled, BearTrap, Wrench
 }
