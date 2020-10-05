@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public bool isActiveElectricity;
     public bool isWaterPuddlePlaced = false;
     public GameObject spider;
+    public AudioClip timeToDieSound;
 
     public GameOver gameOver;
 
@@ -76,6 +77,9 @@ public class GameManager : MonoBehaviour
                 hour = 0;
                 onTime?.Invoke();
                 ActivateSpider();
+                GetComponent<AudioSource>().clip = timeToDieSound;
+                GetComponent<AudioSource>().Play();
+
             }
 
             clockText.text = hour.ToString() + (isPM ? " P.M." : " A.M.");

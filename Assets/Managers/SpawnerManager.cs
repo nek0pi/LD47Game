@@ -11,7 +11,8 @@ public class SpawnerManager : MonoBehaviour
     private List<ItemTransform> allItemsOnMapToReset;
     [SerializeField]
     private ItemTransform playerItem;
-
+    [SerializeField]
+    private ItemTransform enemyItem;
     public void Start()
     {
         if (instance == null)
@@ -37,8 +38,16 @@ public class SpawnerManager : MonoBehaviour
             Instantiate(item.item, item.whereToPlace.position, item.whereToPlace.localRotation);
         }
         Ressurect();
+        PlaceEnemy();
 
     }
+
+    private void PlaceEnemy()
+    {
+        enemyItem.item.SetActive(false);
+        enemyItem.item.transform.position = enemyItem.whereToPlace.position;
+    }
+
     private void Ressurect()
     {
         var ic = playerItem.item.GetComponent<InputContoller>();

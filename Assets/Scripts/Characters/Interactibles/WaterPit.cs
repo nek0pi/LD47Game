@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WaterPit : MonoBehaviour
 {
-    public GameObject ElectrifiedPit;
     private void Start()
     {
         GameManager.instance.onReset += OnReset;

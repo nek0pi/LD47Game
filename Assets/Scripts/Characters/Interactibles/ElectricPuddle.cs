@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class ElectricPuddle : MonoBehaviour
@@ -33,6 +31,7 @@ public class ElectricPuddle : MonoBehaviour
 
             // Blow up an electrical generator
             BlowUpGeneratorSpawner.instance.SpawnGenerator();
+            collision.gameObject.tag = "Interactable";
         }
     }
 
