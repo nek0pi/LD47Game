@@ -32,6 +32,8 @@ public class ElectricPuddle : MonoBehaviour
             // Blow up an electrical generator
             BlowUpGeneratorSpawner.instance.SpawnGenerator();
             collision.gameObject.tag = "Interactable";
+
+            collision.GetComponent<Animator>().SetBool("isStunned", true);
         }
     }
 
@@ -44,8 +46,10 @@ public class ElectricPuddle : MonoBehaviour
         yield return new WaitForSeconds(stunTime);
         ec.GetComponent<Pathfinding.AIPath>().maxSpeed = 4;
         ec.SetState(new EnemyNormalState(ec));
+
+        collision.GetComponent<Animator>().SetBool("isStunned", false);
         Destroy(gameObject);
     }
 
-    public void OnReset(int n) { Destroy(gameObject); }
+    public void OnReset(int n) { GameManager.instance.onReset -= OnReset; Destroy(gameObject); }
 }

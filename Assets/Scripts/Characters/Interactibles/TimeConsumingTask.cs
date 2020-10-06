@@ -11,7 +11,7 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
     public Item ItemInside;
     public event Action OnInteract;
 
-
+    public bool isResetable = true;
     private bool hasFinishedTask = false;
     public float timeConsumes;
     public Item ItemForInteraction;
@@ -101,5 +101,12 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
         }
     }
 
-    public void OnReset(int n) { Destroy(gameObject); }
+    public void OnReset(int n) 
+    {
+        if(isResetable == true)
+        {
+            GameManager.instance.onReset -= OnReset;
+            Destroy(gameObject); 
+        }
+    }
 }

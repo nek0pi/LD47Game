@@ -19,5 +19,5 @@ public class WaterPit : MonoBehaviour
         }
     }
 
-    public void OnReset(int n) { Destroy(gameObject); }
+    public void OnReset(int n) { GameManager.instance.onReset -= OnReset; Destroy(gameObject); }
 }

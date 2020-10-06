@@ -25,6 +25,7 @@ public class BlowUpGeneratorSpawner : MonoBehaviour
     public void SpawnGenerator()
     {
         Instantiate(blownGenerator, placeToSpawn.position, Quaternion.identity);
+        GameManager.instance.Lights.SetActive(false);
         RemoveGen?.Invoke();
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 544482918916141346}
   - component: {fileID: 4466593071404927321}
   - component: {fileID: 544482918916141358}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: WaterFilledHole
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -218,4 +218,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d5c9f072b4cb643bf5de1c5996107f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ElectrifiedPit: {fileID: 0}

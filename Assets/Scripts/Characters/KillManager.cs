@@ -14,7 +14,7 @@ public class KillManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) { Target = null; }
+        if (collision.gameObject.CompareTag("Player")) { Target = null; isDead = false; }
     }
 
     public void Attack()

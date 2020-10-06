@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7895890822503024624}
   - component: {fileID: 8599377741389818770}
   - component: {fileID: 2174593790338536637}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: DiggedOutPit
   m_TagString: Interactable
   m_Icon: {fileID: 0}

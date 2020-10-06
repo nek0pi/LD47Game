@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class ElecticalSwitch : MonoBehaviour
 {
-    public GameObject PointLightsOnMap;
-    public bool isActivated = false;
-    
-
     private void Start()
     {
         GetComponent<TimeConsumingTask>().OnInteract += ActivateTheLights;
@@ -15,7 +11,7 @@ public class ElecticalSwitch : MonoBehaviour
     }
     public void ActivateTheLights()
     {
-        PointLightsOnMap.SetActive(true);
+        GameManager.instance.Lights.SetActive(true);
         GameManager.instance.isActiveElectricity = true;
     }
 

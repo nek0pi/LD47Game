@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TorchL
   m_EditorClassIdentifier: 
   id: 3
-  icon: {fileID: 21300000, guid: fb000b61a02b4e6469bad42c3c5a4f7c, type: 3}
+  icon: {fileID: 21300000, guid: 5c590f6b9faa1434386da965db546cae, type: 3}
   objectName: 'Lit Torch '
   description: It's on FIRE!

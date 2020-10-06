@@ -30,13 +30,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5801319521287322815}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.3054, y: 17.077175, z: 9.451172}
-  m_LocalScale: {x: 17.276411, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5801319521287322803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73,10 +73,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_SortingLayerID: 751556833
+  m_SortingLayer: -1
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 0676e502eb69cfc4ea38dbf519c2f11d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,16 +102,16 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 11.95, y: 11.47}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &5801319521287322800
 MonoBehaviour:
@@ -235,9 +235,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectID: 1
   ItemInside: {fileID: 0}
+  isResetable: 1
   timeConsumes: 3
   ItemForInteraction: {fileID: 11400000, guid: 000abf9be3cea384f8275035c84e6452, type: 2}
-  AssociatedSound: {fileID: 8300000, guid: 8fda3be3fb755d547a2963bee5b67bf2, type: 3}
+  AssociatedSound: {fileID: 8300000, guid: 669e491bb21a72f4fa46e852d8064ef4, type: 3}
 --- !u!114 &1823655380723144580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,5 +265,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528aa9e4d33c99340bd9284f47af9617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointLightsOnMap: {fileID: 0}
-  isActivated: 0

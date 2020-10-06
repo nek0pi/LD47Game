@@ -51,7 +51,7 @@ Material:
     - _OutlineShape: 0
     - _Thickness: 20
     - _TileMode: 0
-    - _Weight: 0.108
+    - _Weight: 0.151
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

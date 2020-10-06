@@ -16,9 +16,11 @@ public class GameManager : MonoBehaviour
 
     public bool isActiveElectricity;
     public bool isWaterPuddlePlaced = false;
+    public GameObject Lights;
     public GameObject spider;
     public AudioClip timeToDieSound;
-
+    public AudioClip musicEpic;
+    public AudioSource MusicAudioSource;
     public GameOver gameOver;
 
     [SerializeField]
@@ -79,6 +81,9 @@ public class GameManager : MonoBehaviour
                 ActivateSpider();
                 GetComponent<AudioSource>().clip = timeToDieSound;
                 GetComponent<AudioSource>().Play();
+                MusicAudioSource.clip = musicEpic;
+                MusicAudioSource.loop = false;
+                MusicAudioSource.Play();
 
             }
 

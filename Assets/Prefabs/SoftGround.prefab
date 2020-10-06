@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7439859665325420701}
   - component: {fileID: 9077926793809616127}
   - component: {fileID: 1477694884634895312}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: SoftGround
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 751556833
   m_SortingLayer: -1
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 31fd89e4408b2d84d8dee83cde45f978, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
