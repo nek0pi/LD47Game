@@ -17,7 +17,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioMixerGroup audioGroup;
 
-
     [SerializeField]
     Toggle musicToggle;
     [SerializeField]
@@ -25,10 +24,11 @@ public class AudioManager : MonoBehaviour
 
     public void Awake()
     {
-        musicToggle.isOn = PlayerPrefs.GetInt("_Music") == 1 ? true : false;
-        musicGroup.audioMixer.SetFloat("volumeMusic", PlayerPrefs.GetInt("_Music") == 1 ? 0f : -80f);
-        audioToggle.isOn = PlayerPrefs.GetInt("_Audio") == 1 ? true : false;
-        musicGroup.audioMixer.SetFloat("volumeSound", PlayerPrefs.GetInt("_Audio") == 1 ? 0f : -80f);
+        //musicToggle.isOn = PlayerPrefs.GetInt("_Music") == 1 ? true : false;
+        //musicGroup.audioMixer.SetFloat("volumeMusic", PlayerPrefs.GetInt("_Music") == 1 ? 0f : -80f);
+        
+        //audioToggle.isOn = PlayerPrefs.GetInt("_Audio") == 1 ? true : false;
+        //musicGroup.audioMixer.SetFloat("volumeSound", PlayerPrefs.GetInt("_Audio") == 1 ? 0f : -80f);
     }
 
     public void Start()
