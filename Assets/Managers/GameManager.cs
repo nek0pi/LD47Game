@@ -83,10 +83,11 @@ public class GameManager : MonoBehaviour
                 hour = 0;
                 onTime?.Invoke();
                 ActivateSpider();
+
                 GetComponent<AudioSource>().clip = timeToDieSound;
                 GetComponent<AudioSource>().Play();
 
-                AudioManager.instance.PlayMusic(musicEpic);
+                AudioManager.instance.PlayMusicOnce(musicEpic);
             }
 
             clockText.text = hour.ToString() + (isPM ? " P.M." : " A.M.");

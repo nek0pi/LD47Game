@@ -47,10 +47,17 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(AudioClip newAudioClip)
     {
         currentMusic = newAudioClip;
+        musicAudioSource.loop = true;
         musicAudioSource.clip = newAudioClip;
         musicAudioSource.Play();
     }
-
+    public void PlayMusicOnce(AudioClip newAudioClip)
+    {
+        currentMusic = newAudioClip;
+        musicAudioSource.loop = false;
+        musicAudioSource.clip = newAudioClip;
+        musicAudioSource.Play();
+    }
     public void StopMusic()
     {
         musicAudioSource.Stop();
