@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject spider;
     public AudioClip timeToDieSound;
     public AudioClip musicEpic;
-    public AudioSource MusicAudioSource;
+    public AudioClip mysticMusic;
     public GameOver gameOver;
 
     [SerializeField]
@@ -44,7 +44,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         InitializeClock();
-    
+    }
+
+    public void Start()
+    {
+        AudioManager.instance.PlayMusic(mysticMusic);
     }
 
     private void InitializeClock()
@@ -81,10 +85,8 @@ public class GameManager : MonoBehaviour
                 ActivateSpider();
                 GetComponent<AudioSource>().clip = timeToDieSound;
                 GetComponent<AudioSource>().Play();
-                MusicAudioSource.clip = musicEpic;
-                MusicAudioSource.loop = false;
-                MusicAudioSource.Play();
 
+                AudioManager.instance.PlayMusic(musicEpic);
             }
 
             clockText.text = hour.ToString() + (isPM ? " P.M." : " A.M.");
@@ -102,6 +104,7 @@ public class GameManager : MonoBehaviour
     {
         resetIteration++;
         ResetTimer();
+        AudioManager.instance.PlayMusic(mysticMusic);
         onReset?.Invoke(resetIteration);
     }
 
