@@ -2193,7 +2193,7 @@ MonoBehaviour:
   spider: {fileID: 330305259}
   timeToDieSound: {fileID: 8300000, guid: ee2be78a98b09ac49aff949fdd0f9fdf, type: 3}
   musicEpic: {fileID: 8300000, guid: 8730b576090eb3b478247865450ab279, type: 3}
-  mysticMusic: {fileID: 0}
+  mysticMusic: {fileID: 8300000, guid: 556acf9568929e24bbaa11a079412467, type: 3}
   gameOver: {fileID: 7833196128229694117}
   hourStart: 2
   clockText: {fileID: 660487319}
