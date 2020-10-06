@@ -1657,7 +1657,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613972865}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -75446059783531357, guid: 0768c6ff2494d0641bd67d6a0c28fb4e,
     type: 2}
@@ -2321,7 +2321,7 @@ MonoBehaviour:
   spider: {fileID: 330305259}
   timeToDieSound: {fileID: 8300000, guid: ee2be78a98b09ac49aff949fdd0f9fdf, type: 3}
   musicEpic: {fileID: 8300000, guid: 8730b576090eb3b478247865450ab279, type: 3}
-  MusicAudioSource: {fileID: 613972866}
+  mysticMusic: {fileID: 8300000, guid: 556acf9568929e24bbaa11a079412467, type: 3}
   gameOver: {fileID: 7833196128229694117}
   hourStart: 2
   clockText: {fileID: 660487319}
