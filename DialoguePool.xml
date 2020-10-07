@@ -189,4 +189,12 @@
     </textdial>
     <ObjectID>18</ObjectID> <!--Chest-->
   </Dialogue>
+
+<Dialogue>
+  <textdial>
+    <LastSentence>Time to finish him off</LastSentence>
+    <Sentences>He is vulnerable now!</Sentences>
+  </textdial>
+  <ObjectID>19</ObjectID> <!--Spider-->
+</Dialogue>
 </ArrayOfDialogue>

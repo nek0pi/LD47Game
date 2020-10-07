@@ -15,9 +15,9 @@ public class WaterPit : MonoBehaviour
     {
         if(ElectricPuddleManager.instance.PlaceElectricPuddle() == true)
         {
-            Destroy(gameObject);
+            //gameObject.SetActive(false);
         }
     }
 
-    public void OnReset(int n) { GameManager.instance.onReset -= OnReset; Destroy(gameObject); }
+    public void OnReset(int n) { GameManager.instance.onReset -= OnReset; gameObject.SetActive(false); }
 }

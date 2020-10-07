@@ -17,6 +17,7 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
     public Item ItemForInteraction;
     private DialogueTrigger dialogueTrigger;
     public AudioClip AssociatedSound;
+
     private void Awake()
     {
         dialogueTrigger = GetComponent<DialogueTrigger>();
@@ -26,6 +27,7 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
     {
         GameManager.instance.onReset += OnReset;
     }
+
     public void Interact(InputContoller inputController)
     {
         // If there is more than 1 item in inventory
@@ -106,7 +108,8 @@ public class TimeConsumingTask : MonoBehaviour, IInteractible
         if(isResetable == true)
         {
             GameManager.instance.onReset -= OnReset;
-            Destroy(gameObject); 
+            if(gameObject != null)
+                gameObject.SetActive(false); 
         }
     }
 }

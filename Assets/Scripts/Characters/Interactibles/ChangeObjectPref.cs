@@ -15,6 +15,6 @@ public class ChangeObjectPref : MonoBehaviour
     public void ChangePrefab()
     {
         Instantiate(ChangingPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        gameObject.SetActive(false) ;
     }
 }

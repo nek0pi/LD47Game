@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 public class DeathManager : MonoBehaviour
 {
     public static DeathManager Instance;
@@ -20,6 +21,13 @@ public class DeathManager : MonoBehaviour
     {
         GetComponent<AudioSource>().clip = DeathClip;
         GetComponent<AudioSource>().Play();
-        GameManager.instance.ResetWord(); 
+        StartCoroutine(WaitAfterDying());
+
+    }
+
+    private IEnumerator WaitAfterDying()
+    {
+        yield return new WaitForSeconds(1f);
+        GameManager.instance.ResetWord();
     }
 }

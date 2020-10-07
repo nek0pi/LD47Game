@@ -106,7 +106,15 @@ public class GameManager : MonoBehaviour
         resetIteration++;
         ResetTimer();
         AudioManager.instance.PlayMusic(mysticMusic);
+        ResetElectricPuddle();
+        Lights.SetActive(false);
         onReset?.Invoke(resetIteration);
+    }
+
+    private void ResetElectricPuddle()
+    {
+        isWaterPuddlePlaced = false;
+        isActiveElectricity = false;
     }
 
     public void ActivateSpider()

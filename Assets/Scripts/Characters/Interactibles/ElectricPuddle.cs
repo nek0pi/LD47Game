@@ -17,7 +17,9 @@ public class ElectricPuddle : MonoBehaviour
         {
             //  kill player
             var ic = collision.gameObject.GetComponent<InputContoller>();
+            ic.GetComponent<MovementController>().CharAnimator.SetBool("isDead", true);
             ic.SetState(new PlayerNoControlState(ic));
+            //gameObject.SetActive(false);
             DeathManager.Instance.Die();
             
         }
@@ -48,8 +50,8 @@ public class ElectricPuddle : MonoBehaviour
         ec.SetState(new EnemyNormalState(ec));
 
         collision.GetComponent<Animator>().SetBool("isStunned", false);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
-    public void OnReset(int n) { GameManager.instance.onReset -= OnReset; Destroy(gameObject); }
+    public void OnReset(int n) { GameManager.instance.onReset -= OnReset; gameObject.SetActive(false); }
 }

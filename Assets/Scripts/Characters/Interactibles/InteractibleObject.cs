@@ -26,6 +26,10 @@ public class InteractibleObject : MonoBehaviour, IInteractible
         GetComponent<DialogueTrigger>().StartDialogue(ObjectID);
     }
 
-    public void OnReset(int n) { GameManager.instance.onReset -= OnReset;  Destroy(gameObject); }
+    public void OnReset(int n) { 
+        GameManager.instance.onReset -= OnReset;
+        if (gameObject != null)
+            gameObject.SetActive(false);
+    }
 
 }
